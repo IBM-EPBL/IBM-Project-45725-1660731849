@@ -1,0 +1,531 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Basic Python"
+      ],
+      "metadata": {
+        "id": "McSxJAwcOdZ1"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 1. Split this string"
+      ],
+      "metadata": {
+        "id": "CU48hgo4Owz5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s = \"Hi there Sam!\""
+      ],
+      "metadata": {
+        "id": "s07c7JK7Oqt-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s=\"Hi there sam!\"\n",
+        "s.split()"
+      ],
+      "metadata": {
+        "id": "6mGVa3SQYLkb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ba91f7c4-6b57-4208-8c57-406385ea1f9c"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Hi', 'there', 'sam!']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 2. Use .format() to print the following string. \n",
+        "\n",
+        "### Output should be: The diameter of Earth is 12742 kilometers."
+      ],
+      "metadata": {
+        "id": "GH1QBn8HP375"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "planet = \"Earth\"\n",
+        "diameter = 12742"
+      ],
+      "metadata": {
+        "id": "_ZHoml3kPqic"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "planet =\"Earth\"\n",
+        "diameter = 12742\n",
+        "print(\"the diameter of {} is {} kilometers\".format(planet,diameter))\n"
+      ],
+      "metadata": {
+        "id": "HyRyJv6CYPb4",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "bc45e4a9-4522-427c-f1d3-916c5a133c0a"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "the diameter of Earth is 12742 kilometers\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 3. In this nest dictionary grab the word \"hello\""
+      ],
+      "metadata": {
+        "id": "KE74ZEwkRExZ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "d = {'k1':[1,2,3,{'tricky':['oh','man','inception',{'target':[1,2,3,'hello']}]}]}"
+      ],
+      "metadata": {
+        "id": "fcVwbCc1QrQI"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "d = {'k1':[1,2,3,{'tricky':['oh','man','inception',{'target':[1,2,3,'hello']}]}]}\n",
+        "d['k1'][3]['tricky'][3]['target'][3]"
+      ],
+      "metadata": {
+        "id": "MvbkMZpXYRaw",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "395a92bc-b8a8-4a63-8d32-fb6393c307be"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'hello'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Numpy"
+      ],
+      "metadata": {
+        "id": "bw0vVp-9ddjv"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np"
+      ],
+      "metadata": {
+        "id": "LLiE_TYrhA1O"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 4.1 Create an array of 10 zeros? \n",
+        "## 4.2 Create an array of 10 fives?"
+      ],
+      "metadata": {
+        "id": "wOg8hinbgx30"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "gNPxPGPEqFjB"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "array=np.zeros(10)\n",
+        "print(array)"
+      ],
+      "metadata": {
+        "id": "NHrirmgCYXvU",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "db205f07-74d3-4071-8907-edf290d150c1"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "e4005lsTYXxx"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 5. Create an array of all the even integers from 20 to 35"
+      ],
+      "metadata": {
+        "id": "gZHHDUBvrMX4"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "import numpy as np\n",
+        "a=np.arange(20,36,2)\n",
+        "a"
+      ],
+      "metadata": {
+        "id": "oAI2tbU2Yag-",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e416b718-302a-4786-948f-0e707d96484d"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([20, 22, 24, 26, 28, 30, 32, 34])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 6. Create a 3x3 matrix with values ranging from 0 to 8"
+      ],
+      "metadata": {
+        "id": "NaOM308NsRpZ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "s=np.arange(0,9).reshape(3,3)\n",
+        "s"
+      ],
+      "metadata": {
+        "id": "tOlEVH7BYceE",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ddd86452-4946-41bb-9c6e-8b669ee8f721"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[0, 1, 2],\n",
+              "       [3, 4, 5],\n",
+              "       [6, 7, 8]])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 17
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 7. Concatenate a and b \n",
+        "## a = np.array([1, 2, 3]), b = np.array([4, 5, 6])"
+      ],
+      "metadata": {
+        "id": "hQ0dnhAQuU_p"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "a=np.array([1,2,3])\n",
+        "b=np.array([4,5,6])\n",
+        "s=np.concatenate((a,b),axis=0)\n",
+        "print(s)"
+      ],
+      "metadata": {
+        "id": "rAPSw97aYfE0",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "edd29f61-9c0d-45a1-fcc9-94322bd5cd83"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1 2 3 4 5 6]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Pandas"
+      ],
+      "metadata": {
+        "id": "dlPEY9DRwZga"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 8. Create a dataframe with 3 rows and 2 columns"
+      ],
+      "metadata": {
+        "id": "ijoYW51zwr87"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "6F7a01xOv3DJ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "d={\"reg no\":[1,2],\"name\":['arthi','maha']}\n",
+        "df=pd.Dataframe(d)\n",
+        "df"
+      ],
+      "metadata": {
+        "id": "T5OxJRZ8uvR7",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 339
+        },
+        "outputId": "81b31af8-8fc3-468c-bdcf-ef8d8bb7cc74"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "AttributeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-36-4573e9675fee>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mpandas\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mpd\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0md\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m{\u001b[0m\u001b[0;34m\"reg no\"\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\"name\"\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m'arthi'\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m'maha'\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m}\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m \u001b[0mdf\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mpd\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mDataframe\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0md\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      4\u001b[0m \u001b[0mdf\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.7/dist-packages/pandas/__init__.py\u001b[0m in \u001b[0;36m__getattr__\u001b[0;34m(name)\u001b[0m\n\u001b[1;32m    242\u001b[0m         \u001b[0;32mreturn\u001b[0m \u001b[0m_SparseArray\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    243\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 244\u001b[0;31m     \u001b[0;32mraise\u001b[0m \u001b[0mAttributeError\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34mf\"module 'pandas' has no attribute '{name}'\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    245\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    246\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mAttributeError\u001b[0m: module 'pandas' has no attribute 'Dataframe'"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "xNpI_XXoYhs0"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 9. Generate the series of dates from 1st Jan, 2023 to 10th Feb, 2023"
+      ],
+      "metadata": {
+        "id": "UXSmdNclyJQD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "s=pd.date_range(start='01-01-2023',end='02-10-2023')\n",
+        "s\n"
+      ],
+      "metadata": {
+        "id": "dgyC0JhVYl4F",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "69f2f378-e3f6-4a57-8cb6-c0b9916387c4"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "DatetimeIndex(['2023-01-01', '2023-01-02', '2023-01-03', '2023-01-04',\n",
+              "               '2023-01-05', '2023-01-06', '2023-01-07', '2023-01-08',\n",
+              "               '2023-01-09', '2023-01-10', '2023-01-11', '2023-01-12',\n",
+              "               '2023-01-13', '2023-01-14', '2023-01-15', '2023-01-16',\n",
+              "               '2023-01-17', '2023-01-18', '2023-01-19', '2023-01-20',\n",
+              "               '2023-01-21', '2023-01-22', '2023-01-23', '2023-01-24',\n",
+              "               '2023-01-25', '2023-01-26', '2023-01-27', '2023-01-28',\n",
+              "               '2023-01-29', '2023-01-30', '2023-01-31', '2023-02-01',\n",
+              "               '2023-02-02', '2023-02-03', '2023-02-04', '2023-02-05',\n",
+              "               '2023-02-06', '2023-02-07', '2023-02-08', '2023-02-09',\n",
+              "               '2023-02-10'],\n",
+              "              dtype='datetime64[ns]', freq='D')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 29
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 10. Create 2D list to DataFrame"
+      ],
+      "metadata": {
+        "id": "ZizSetD-y5az"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lists=[[1,'aaa',22],[2,'bbb',25],[3,'ccc',24]]"
+      ],
+      "metadata": {
+        "id": "_XMC8aEt0llB"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "lists=[[1,'aaa',22],[2,'bbb',25],[3,'ccc',24]]\n",
+        "d=pd.dataframe (lists)\n",
+        "d\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "knH76sDKYsVX",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 356
+        },
+        "outputId": "98bdfcd7-03ed-4ed1-905e-9c6803303490"
+      },
+      "execution_count": 48,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "AttributeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-48-5651a86614a6>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mpandas\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mpd\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0mlists\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m'aaa'\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m22\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m'bbb'\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m25\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m3\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m'ccc'\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m24\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m \u001b[0md\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mpd\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdataframe\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mlists\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      4\u001b[0m \u001b[0md\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.7/dist-packages/pandas/__init__.py\u001b[0m in \u001b[0;36m__getattr__\u001b[0;34m(name)\u001b[0m\n\u001b[1;32m    242\u001b[0m         \u001b[0;32mreturn\u001b[0m \u001b[0m_SparseArray\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    243\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 244\u001b[0;31m     \u001b[0;32mraise\u001b[0m \u001b[0mAttributeError\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34mf\"module 'pandas' has no attribute '{name}'\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    245\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    246\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mAttributeError\u001b[0m: module 'pandas' has no attribute 'dataframe'"
+          ]
+        }
+      ]
+    }
+  ]
+}
